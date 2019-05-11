@@ -137,7 +137,7 @@ nav {
 
 /*------------------Logo--------------------*/
 
-#homePageLogo {
+.homePageLogo {
     float: right;
     display: inline-block;
     font-weight: bold;
