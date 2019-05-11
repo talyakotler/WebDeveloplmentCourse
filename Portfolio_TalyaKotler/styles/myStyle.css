@@ -1,4 +1,4 @@
-﻿h1, h2, h3, h4, h5, h6, a, p, #myName, #portfolio, #lastName {
+﻿h1, h2, h3, h4, h5, h6, a, p, span {
     font-family: Calibri;
 }
 
@@ -9,8 +9,7 @@ body {
     background-position: top;
 }
 
-#container
-{
+#container {
     margin: 0px auto;
     width: 960px;
 }
@@ -18,150 +17,129 @@ body {
 
 /*-------------------------------------------------Global----------------------------------------------------------*/
 
-article 
-{
+article {
     background-color: #F8F8F8;
 }
 
-section 
-{
+section {
     display: inline-block;
     width: 960px;
     height: 400px;
 }
 
-section p 
-{
-    font-size: 14pt;
-    line-height: 1.2;
-    margin-top: 10px;
-    text-align: justify;
-}
+    section p {
+        font-size: 14pt;
+        line-height: 1.2;
+        margin-top: 10px;
+        text-align: justify;
+    }
 
 
-h1 
-{
+h1 {
     color: #F7DB61;
     font-size: 28pt;
     text-align: center;
     margin: 0 auto;
     display: block;
     padding: 35px 0px;
+    width: 300px;
 }
 
-h1::after 
-{
-    content: '';
-    display: block;
-    background-color: #16EAFD;
-    width: 100px;
-    height: 4px;
-    margin: 5px auto 0px auto;
-    -webkit-transition: width 0.2s ease;
-    -moz-transition: width 0.2s ease;
-    -ms-transition: width 0.2s ease;
-    -o-transition: width 0.2s ease;
-    transition: width 0.2s ease;
-}
+    h1::after {
+        content: '';
+        display: block;
+        background-color: #16EAFD;
+        width: 100px;
+        height: 4px;
+        margin: 5px auto 0px auto;
+        -webkit-transition: width 0.2s ease;
+        -moz-transition: width 0.2s ease;
+        -ms-transition: width 0.2s ease;
+        -o-transition: width 0.2s ease;
+        transition: width 0.2s ease;
+    }
 
-h1:hover::after 
-{
-    width: 150px;
-}
+    h1:hover::after {
+        width: 150px;
+    }
 
 
-h2 
-{
+h2 {
     color: #FF6767;
     font-size: 22pt;
     padding-top: 20px;
 }
 
-h3 
-{
+h3 {
     font-size: 28pt;
     color: #FF6767;
     padding-top: 20px;
 }
 
-li 
-{
+li {
     list-style: none;
 }
 
-a
-{
-    text-decoration:none;
+a {
+    text-decoration: none;
 }
 
-audio 
-{
+audio {
     width: 300px;
     margin: 50px 330px;
 }
 
 /*-----------------------------------------------Navigation_Bar--------------------------------------------------------*/
 
-nav 
-{
+nav {
     height: 50px;
 }
 
-nav ul
-{
-    padding-right: 450px;
-}
-nav ul li 
-{
-    float: right;
-}
+    nav ul {
+        padding-right: 450px;
+    }
 
-nav ul li a 
-{
-    display: block;
-    color: black;
-    text-align: center;
-    height: 50px;
-    padding: 15px 40px 0px 0px;
-    font-size: 13.5pt;
-    font-weight: 500;
-    -webkit-transition: color 0.2s ease;
-    -moz-transition: color 0.2s ease;
-    -ms-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
-    transition: color 0.2s ease;
-}
+        nav ul li {
+            float: right;
+        }
 
-nav li a:hover 
-{
-    color: #faca0c;
-}
+            nav ul li a {
+                display: block;
+                color: black;
+                text-align: center;
+                height: 50px;
+                padding: 15px 40px 0px 0px;
+                font-size: 13.5pt;
+                font-weight: 500;
+                -webkit-transition: color 0.2s ease;
+                -moz-transition: color 0.2s ease;
+                -ms-transition: color 0.2s ease;
+                -o-transition: color 0.2s ease;
+                transition: color 0.2s ease;
+            }
 
-.navCurrent 
-{
+    nav li a:hover {
+        color: #faca0c;
+    }
+
+.navCurrent {
     color: #FF6767;
 }
 
-.navCurrent::after 
-{
-    content: '';
-    display: block;
-    background-color: #16EAFD;
-    height: 2px;
-    width: 50%;
-    margin: 5px auto 0 auto;
-}
+    .navCurrent::after {
+        content: '';
+        display: block;
+        background-color: #16EAFD;
+        height: 2px;
+        width: 50%;
+        margin: 5px auto 0 auto;
+    }
 
 /*------------------Logo--------------------*/
 
-#homePageLogo
-{
+#homePageLogo {
     float: right;
     display: inline-block;
-}
-    
-#homePageLogo
-{
     font-weight: bold;
     font-size: 24pt;
     color: #FF6767;
@@ -170,13 +148,11 @@ nav li a:hover
     text-align: right;
 }
 
-#lastName 
-{
+#lastName {
     color: #faca0c;
 }
 
-#portfolio 
-{
+#portfolio {
     font-weight: 200;
     font-size: 14pt;
     font-weight: 500;
@@ -187,54 +163,49 @@ nav li a:hover
 
 /*------------------Header--------------------*/
 
-#aboutMe 
-{
+#aboutMe {
     background-image: url(../images/me2.jpg);
     background-repeat: no-repeat;
     background-size: 960px;
     background-position: top;
 }
 
-#aboutMe header
-{
-    color: white;
-    display: inline-block;
-    width: 470px;
-    height: 180px;
-    margin-top: 100px;
-    margin-right:80px;
-    font-size: 24pt;
-}
+    #aboutMe header {
+        color: white;
+        display: inline-block;
+        width: 470px;
+        height: 180px;
+        margin-top: 100px;
+        margin-right: 80px;
+        font-size: 24pt;
+    }
 
-#aboutMe h1 
-{
-    font-size: 54pt;
-    display: inline-block;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
+    #aboutMe h1 {
+        width: 470px;
+        text-align: right;
+        font-size: 54pt;
+        display: inline-block;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
 
-#aboutMe h1::after
-{
-    background-color: #F7DB61;
-}
+        #aboutMe h1::after {
+            background-color: #F7DB61;
+        }
 
-#myName
-{
+#myName {
     display: inline-block;
     font-size: 36pt;
 }
 
 
-#aboutMe header p
-{
+#aboutMe header p {
     margin-top: 15px;
 }
 
 
-.clickHere 
-{
+.clickHere {
     display: inline-block;
     width: 130px;
     height: 40px;
@@ -253,166 +224,143 @@ nav li a:hover
     transition: background 0.4s ease;
 }
 
-.clickHere:hover 
-{
-    background-color: white;
-    color: #faca0c;
-    border: 3px solid white;
-}
+    .clickHere:hover {
+        background-color: white;
+        color: #faca0c;
+        border: 3px solid white;
+    }
 
 
 /*------------------Section_myWork--------------------*/
 
-#aboutMe section 
-{
+#aboutMe section {
     background-color: #F7DB61;
     margin-top: 350px;
     height: 1250px;
 }
 
-#aboutMe section li
-{
-    height: 350px; 
-    margin: 30px 45px 0px 40px;
-}
+    #aboutMe section li {
+        height: 350px;
+        margin: 30px 45px 0px 40px;
+    }
 
-#aboutMe section h2 
-{
-    font-size: 36pt;
-    color: white;
-    text-align: center;
-}
+    #aboutMe section h2 {
+        font-size: 36pt;
+        color: white;
+        text-align: center;
+    }
 
-#aboutMe section h2::after 
-{
-    content: '';
-    display: block;
-    background-color: #16EAFD;
-    width: 100px;
-    height: 4px;
-    margin: 5px auto 0px auto;
-    -webkit-transition: width 0.2s ease;
-    -moz-transition: width 0.2s ease;
-    -ms-transition: width 0.2s ease;
-    -o-transition: width 0.2s ease;
-    transition: width 0.2s ease;
-}
+        #aboutMe section h2::after {
+            content: '';
+            display: block;
+            background-color: #16EAFD;
+            width: 100px;
+            height: 4px;
+            margin: 5px auto 0px auto;
+            -webkit-transition: width 0.2s ease;
+            -moz-transition: width 0.2s ease;
+            -ms-transition: width 0.2s ease;
+            -o-transition: width 0.2s ease;
+            transition: width 0.2s ease;
+        }
 
-#aboutMe section h2:hover::after 
-{
-    width: 150px;
-}
+        #aboutMe section h2:hover::after {
+            width: 150px;
+        }
 
-#aboutMe section li img 
-{
-    display: block;
-    width: 300px;
-    border: 5px dashed white;
-    -webkit-border-radius: 300px;
-    border-radius: 300px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
+    #aboutMe section li img {
+        display: block;
+        width: 300px;
+        border: 5px dashed white;
+        -webkit-border-radius: 300px;
+        border-radius: 300px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
 
-#aboutMe section img:hover
-{
-    width: 350px;
-}
+    #aboutMe section img:hover {
+        width: 350px;
+    }
 
-#lichildren img
-{
+#lichildren img {
     float: left;
 }
 
-#lifrida img
-{
+#lifrida img {
     background-position: top;
     float: right;
 }
 
-#linewyear img
-{
+#linewyear img {
     background-position: center;
     float: left;
 }
 
-#aboutMe section p
-{
+#aboutMe section p {
     font-size: 22pt;
     width: 470px;
     color: white;
     padding: 0px;
 }
 
-#lifrida h3, #lifrida p 
-{
+#lifrida h3, #lifrida p {
     margin-right: 375px;
 }
 
 /*------------------Footer--------------------*/
 
-footer 
-{
+footer {
     height: 170px;
     border-top: 7px dashed #16EAFD;
 }
 
-footer h2 
-{
-    text-align: center;
-    padding: 25px 0px;
-}
+    footer h2 {
+        text-align: center;
+        padding: 25px 0px;
+    }
 
-footer h3 
-{
-    font-size: 16pt;
-}
+    footer h3 {
+        font-size: 16pt;
+    }
 
-footer li 
-{
-    display: inline-block;
-    width: 307px;
-    height: 70px;
-    text-align: center;
-    border-left: 4px dashed #16EAFD;
-}
+    footer li {
+        display: inline-block;
+        width: 307px;
+        height: 70px;
+        text-align: center;
+        border-left: 4px dashed #16EAFD;
+    }
 
-footer h3
-{
-    padding-bottom: 10px;
-    padding-top: 0px;
-}
+    footer h3 {
+        padding-bottom: 10px;
+        padding-top: 0px;
+    }
 
-#socialMedia
-{
+#socialMedia {
     border: none;
     vertical-align: top;
 }
 
-footer img
-{
+footer img {
     width: 30px;
 }
 
-#socialMedia li 
-{
+#socialMedia li {
     border: none;
     width: 40px;
 }
 
 /*-------------------------------------------------Children-Games_Page----------------------------------------------------------*/
 
-.description 
-{
+.description {
     width: 450px;
     padding-top: 50px;
 }
 
-#insparetion .description, #youtube, #photoLeft 
-{
+#insparetion .description, #youtube, #photoLeft {
     float: left;
 }
 
@@ -422,16 +370,13 @@ footer img
     position: relative;
 }
 
-#youtubeSection 
-{
+#youtubeSection {
     height: 350px;
 }
 
-.watchTheYoutube
-{
+.watchTheYoutube {
     padding-top: 110px;
     padding-right: 10px;
-
 }
 
 /*------------------Photos_Overlay--------------------*/
@@ -442,20 +387,17 @@ footer img
     display: inline-block;
 }
 
-#photoLeft
-{
+#photoLeft {
     top: -220px;
 }
 
-a .image 
-{
+a .image {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.overlay 
-{
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -472,13 +414,11 @@ a .image
     background-color: rgba(247, 219, 97, 0.9);
 }
 
-.photoLink:hover .overlay 
-{
+.photoLink:hover .overlay {
     opacity: 1;
 }
 
-.text 
-{
+.text {
     color: #fff;
     font-size: 22pt;
     font-weight: 600;
@@ -494,12 +434,8 @@ a .image
 
 /*-------------------------------------------------Happy-New-Year_Page----------------------------------------------------------*/
 
-#santaPhoto
-{
+#santaPhoto {
     width: 70%;
     margin: 40px auto 0 auto;
     right: 140px;
 }
-
-
-
