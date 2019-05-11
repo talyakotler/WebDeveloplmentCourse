@@ -39,14 +39,14 @@ section p
 }
 
 
-h1 {
+h1 
+{
     color: #F7DB61;
     font-size: 28pt;
     text-align: center;
     margin: 0 auto;
     display: block;
-    padding: 30px 0px;
-
+    padding: 35px 0px;
 }
 
 h1::after 
@@ -56,8 +56,12 @@ h1::after
     background-color: #16EAFD;
     width: 100px;
     height: 4px;
-    margin: 0px auto;
-    margin-top: 5px;
+    margin: 5px auto 0px auto;
+    -webkit-transition: width 0.2s ease;
+    -moz-transition: width 0.2s ease;
+    -ms-transition: width 0.2s ease;
+    -o-transition: width 0.2s ease;
+    transition: width 0.2s ease;
 }
 
 h1:hover::after 
@@ -66,7 +70,8 @@ h1:hover::after
 }
 
 
-h2 {
+h2 
+{
     color: #FF6767;
     font-size: 22pt;
     padding-top: 20px;
@@ -95,45 +100,41 @@ audio
     margin: 50px 330px;
 }
 
-
 /*-----------------------------------------------Navigation_Bar--------------------------------------------------------*/
 
 nav 
 {
-    width: 960px;
     height: 50px;
 }
 
+nav ul
+{
+    padding-right: 450px;
+}
 nav ul li 
 {
-    float: left;
+    float: right;
 }
 
-nav ul li a {
+nav ul li a 
+{
     display: block;
     color: black;
     text-align: center;
     height: 50px;
-    padding-top: 15px;
-    padding-right: 40px;
+    padding: 15px 40px 0px 0px;
     font-size: 13.5pt;
     font-weight: 500;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
 }
 
-nav a:hover 
+nav li a:hover 
 {
     color: #faca0c;
-}
-
-nav a:hover::after 
-{
-    content: '';
-    display: block;
-    background-color: #16EAFD;
-    height: 2px;
-    width: 50%;
-    margin: 0px auto;
-    margin-top: 5px;
 }
 
 .navCurrent 
@@ -141,28 +142,30 @@ nav a:hover::after
     color: #FF6767;
 }
 
-.navCurrent::after
+.navCurrent::after 
 {
     content: '';
     display: block;
     background-color: #16EAFD;
     height: 2px;
     width: 50%;
-    margin: 0px auto;
-    margin-top: 5px;
+    margin: 5px auto 0 auto;
 }
 
-#homePageLink
+/*------------------Logo--------------------*/
+
+#homePageLogo
 {
     float: right;
+    display: inline-block;
 }
     
-#homePageLink a 
+#homePageLogo
 {
     font-weight: bold;
     font-size: 24pt;
     color: #FF6767;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-right: 0px;
     text-align: right;
 }
@@ -183,7 +186,6 @@ nav a:hover::after
 /*-------------------------------------------------Home_Page----------------------------------------------------------*/
 
 /*------------------Header--------------------*/
-
 
 #aboutMe 
 {
@@ -244,7 +246,7 @@ nav a:hover::after
     -webkit-border-radius: 300px;
     border-radius: 300px;
     font-weight: 600;
-    -webkit-transition: background 0.5s ease;
+    -webkit-transition: background 0.4s ease;
     -moz-transition: background 0.4s ease;
     -ms-transition: background 0.4s ease;
     -o-transition: background 0.4s ease;
@@ -256,10 +258,6 @@ nav a:hover::after
     background-color: white;
     color: #faca0c;
     border: 3px solid white;
-    -webkit-transition: background 0.5s ease;
-    -moz-transition: background 0.4s ease;
-    -ms-transition: background 0.4s ease;
-    -o-transition: background 0.4s ease;
 }
 
 
@@ -292,8 +290,12 @@ nav a:hover::after
     background-color: #16EAFD;
     width: 100px;
     height: 4px;
-    margin: 0px auto;
-    margin-top: 5px;
+    margin: 5px auto 0px auto;
+    -webkit-transition: width 0.2s ease;
+    -moz-transition: width 0.2s ease;
+    -ms-transition: width 0.2s ease;
+    -o-transition: width 0.2s ease;
+    transition: width 0.2s ease;
 }
 
 #aboutMe section h2:hover::after 
@@ -318,11 +320,6 @@ nav a:hover::after
 #aboutMe section img:hover
 {
     width: 350px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 
 #lichildren img
@@ -359,7 +356,6 @@ nav a:hover::after
 
 footer 
 {
-    width: 960px;
     height: 170px;
     border-top: 7px dashed #16EAFD;
 }
@@ -388,7 +384,6 @@ footer h3
 {
     padding-bottom: 10px;
     padding-top: 0px;
-    
 }
 
 #socialMedia
@@ -421,6 +416,11 @@ footer img
     float: left;
 }
 
+#youtube {
+    top: -140px;
+    display: inline-block;
+    position: relative;
+}
 
 #youtubeSection 
 {
@@ -431,13 +431,21 @@ footer img
 {
     padding-top: 110px;
     padding-right: 10px;
+
 }
 
+/*------------------Photos_Overlay--------------------*/
 
-.photoLink 
-{
+.photoLink {
     position: relative;
     width: 48%;
+    display: inline-block;
+    top: 0px;
+}
+
+#photoLeft
+{
+    top: -220px;
 }
 
 a .image 
@@ -457,6 +465,10 @@ a .image
     height: 100%;
     width: 100%;
     opacity: 0;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
     transition: .5s ease;
     background-color: rgba(247, 219, 97, 0.9);
 }
@@ -481,13 +493,14 @@ a .image
     text-align: center;
 }
 
-
 /*-------------------------------------------------Happy-New-Year_Page----------------------------------------------------------*/
 
 #santaPhoto
 {
     width: 70%;
     margin: 40px auto 0 auto;
-    
+    right: 140px;
 }
+
+
 
