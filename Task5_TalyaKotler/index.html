@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>The B.A Program - Instructional Technologies </title>
+    <meta name="description" content="הסבר אודות התואר הראשון לטכנולוגיות למידה במכון הטכנולוגי HIT בחולון. תואר יחודי הממזג בין שלושה עולמות עיקריים: עיצוב, טכנולוגיה והדרכה." />
+    <meta name="keywords" content="טכנולוגיות למידה, instructional Technologies, תואר ראשון, עיצוב, טכנולוגיה, הדרכה, הרשמה" />
+    <meta name="author" content="Talya Kotler" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/jScripts/contactUs.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <div id="container">
+        <article>
+            <header>
+                <h1>טכנולוגיות למידה - B.A</h1>
+                <p>אחד מהתחומים העתידיים אשר נמצא בעיצומה של נסיקה דרמטית הוא תחום <span class="bold">טכנולוגיות למידה</span> (טל"מ). טכנולוגיות הלמידה כוללות כל אמצעי מבוסס טכנולוגיה המסייע למשתמש בה לתווך הדרכה ולהטמיע ידע ומיומנויות. אמצעים אלה כוללים: מערכות מולטימדיה, אנימציה, רשתות חברתיות, משחקי מחשב ורשת, לומדות אינטראקטיביות, מציאות מדומה ורבודה ומה לא. </p>
+                <p>אז אם אתם בעלי ראש גדול ומעוניינים לשלב בין כמה עולמות ולהיות המובילים בתחום חדש ומאתגר, התואר הזה <span class="bold">בול בשבילכם!</span></p>
+                <a class="clickHere readMoreLink"  href="#readMore" target="_self">קראו עוד</a>
+                <a class="clickHere signInLink" href="#signIn" target="_self">הירשמו עכשיו</a>
+            </header>
+
+            <section>
+                <h2> <a name="readMore">מיזוג בין שלושה עולמות</a></h2>
+                <ul>
+                    <li id="design">
+                        <h3>עיצוב</h3>
+                        <p>גרפיקה ממוחשבת | מבוא לתקשורת חזותית | ארגון ויצוג ידע | עיצוב ממשק וחווית משתמש | אנימציה | וידאו - תסריט והפקה</p>
+                    </li>
+                    <li id="technology">
+                        <h3>טכנולוגיה</h3>
+                        <p>מבוא למחשבים ותקשוב | טכנולוגיה במדיה החדשה | פיתוח אתרי אינטרנט | תכנות | מבוא לבסיסי נתונים | תכנות אינטראקטיבי</p>
+                    </li>
+                    <li id="education">
+                        <h3>הדרכה</h3>
+                        <p>פסיכולוגיה ותיאוריות למידה | פרזנטציות אפקטיביות | פיתוח הדרכה בארגון | מבוא לסוציולוגיה בעידן המידע | התנהגות ארגונית</p>
+                    </li>
+                </ul>
+                <a class="clickHere fullProgramLink" href="http://projects.telem-hit.net/telem-courses/index.htm" target="_blank">לכל הקורסים</a>
+                <a class="clickHere signInLink2" href="#signIn" target="_self">הירשמו עכשיו</a>
+            </section>
+
+            <section>
+                <h2> <a name="signIn">הירשמו עכשיו!</a></h2>
+                <p>השאר/י את פרטיך ויועץ לימודים יחזור אליך בהקדם.</p>
+                <form>
+                    <input type="hidden" id="myEmail" name="name" value="talyakot@gmail.com">
+
+                    <label for="FirstName">
+                        שם פרטי:
+                        <input type="text" id="FirstName" />
+                    </label>
+
+                    <label for="LastName">
+                        שם משפחה:
+                        <input type="text" id="LastName" />
+                    </label>
+
+                    <label for="Email">
+                        דואר אלקטרוני:
+                        <input type="text" id="Email" />
+                    </label>
+
+                    <label for="PhoneNumber">
+                        מספר טלפון:
+                        <input type="text" id="PhoneNumber" />
+                    </label>
+
+                    <label for="acceptenceCB">
+                        <input type="checkbox" id="acceptenceCB" /> מוכן/ה לקבל דוא"ל פירסומי
+                    </label>
+
+                    <input type="submit" id="Send" class="clickHere" value="שלח">
+
+                    <div id="feedback"></div>
+                </form>
+            </section>
+        </article>
+
+    </div>
+</body>
+</html>
